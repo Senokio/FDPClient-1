@@ -15,7 +15,7 @@ import net.minecraft.network.play.server.S02PacketChat
 
 @ModuleInfo(name = "AutoIgnore", description = "Auto ignore spammers(only redesky).", category = ModuleCategory.MISC)
 class AutoIgnore : Module() {
-    private val minDelayValue= IntegerValue("MinDelay",3000,1000,5000)
+    private val minDelayValue= IntegerValue("MinDelay",3000,1000,5001)
     private val vlValue= IntegerValue("IgnoreVL",3,1,7)
 
     private val chatTimes=HashMap<String,Long>()
